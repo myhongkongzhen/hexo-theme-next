@@ -423,7 +423,7 @@ busuanzi_count:
   # custom pv span for the whole site
   site_pv: true
   site_pv_header: <i class="fa fa-eye"></i>
-  site_pv_footer: 次
+  site_pv_footer:
   # custom pv span for one page only
   page_pv: false
   page_pv_header: <i class="fa fa-file-o"></i>
