@@ -1,3 +1,11 @@
+/****************************************************************************************************************************
+ * Copyright (c) 2017. Lorem ipsum dolor sit amet, consectetur adipiscing elit.                                             *
+ * Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.                              *
+ * Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.                                                         *
+ * Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.                           *
+ * Vestibulum commodo. Ut rhoncus gravida arcu.                                                                             *
+ ****************************************************************************************************************************/
+
 /*! VelocityJS.org (1.2.2). (C) 2014 Julian Shapiro. MIT @license: en.wikipedia.org/wiki/MIT_License */
 
 /*************************
@@ -359,13 +367,13 @@
             var elem = this[0],
                 offsetParent = offsetParent.apply(elem),
                 offset = this.offset(),
-                parentOffset = /^(?:body|html)$/i.test(offsetParent.nodeName) ? { top: 0, left: 0 } : $(offsetParent).offset()
+                parentOffset = /^(?:body|html)$/i.test(offsetParent.nodeName) ? { top: 0, left: 0 } : $(offsetParent).offset();
 
             offset.top -= parseFloat(elem.style.marginTop) || 0;
             offset.left -= parseFloat(elem.style.marginLeft) || 0;
 
             if (offsetParent.style) {
-                parentOffset.top += parseFloat(offsetParent.style.borderTopWidth) || 0
+                parentOffset.top += parseFloat(offsetParent.style.borderTopWidth) || 0;
                 parentOffset.left += parseFloat(offsetParent.style.borderLeftWidth) || 0
             }
 
@@ -402,12 +410,8 @@
     window.Velocity = { Utilities: $ };
 })(window);
 
-/******************
-    Velocity.js
-******************/
-
-;(function (factory) {
-    /* CommonJS module. */
+(function (factory) {
+  /* CommonJS module. */
     if (typeof module === "object" && typeof module.exports === "object") {
         module.exports = factory();
     /* AMD module. */
@@ -674,9 +678,8 @@ return function (global, window, document, undefined) {
 
         /* jQuery <=1.4.2 returns null instead of undefined when no match is found. We normalize this behavior. */
         return response === null ? undefined : response;
-    };
-
-    /**************
+    }
+  /**************
         Easing
     **************/
 
@@ -2190,7 +2193,7 @@ return function (global, window, document, undefined) {
                             }
 
                             /* Iterate through the calls targeted by the stop command. */
-                            $.each(elements, function(l, element) {                                
+                            $.each(elements, function(l, element) {
                                 /* Check that this call was applied to the target element. */
                                 if (element === activeElement) {
                                     /* Optionally clear the remaining queued calls. */
@@ -3473,7 +3476,7 @@ return function (global, window, document, undefined) {
                             tween.currentValue = currentValue;
 
                             /* If we're tweening a fake 'tween' property in order to log transition values, update the one-per-call variable so that
-                               it can be passed into the progress callback. */ 
+                               it can be passed into the progress callback. */
                             if (property === "tween") {
                                 tweenDummyValue = currentValue;
                             } else {
@@ -3807,7 +3810,7 @@ return function (global, window, document, undefined) {
                 /* Force vertical overflow content to clip so that sliding works as expected. */
                 inlineValues.overflow = element.style.overflow;
                 element.style.overflow = "hidden";
-            }
+            };
 
             opts.complete = function() {
                 /* Reset element to its pre-slide inline values once its slide animation is complete. */

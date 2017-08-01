@@ -1,8 +1,14 @@
+/****************************************************************************************************************************
+ * Copyright (c) 2017. Lorem ipsum dolor sit amet, consectetur adipiscing elit.                                             *
+ * Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.                              *
+ * Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.                                                         *
+ * Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.                           *
+ * Vestibulum commodo. Ut rhoncus gravida arcu.                                                                             *
+ ****************************************************************************************************************************/
+
 /**********************
    Velocity UI Pack
 **********************/
-
-/* VelocityJS.org UI Pack (5.0.4). (C) 2014 Julian Shapiro. MIT @license: en.wikipedia.org/wiki/MIT_License. Portions copyright Daniel Eden, Christian Pucci. */
 
 ;(function (factory) {
     /* CommonJS module. */
@@ -743,7 +749,7 @@ return function (global, window, document, undefined) {
 
                         callbackOriginal && callbackOriginal.call(elements, elements);
                         Velocity(currentCall);
-                    }
+                    };
 
                     if (nextCall.o) {
                         nextCall.o = $.extend({}, nextCallOptions, options);
