@@ -197,7 +197,7 @@ post_meta:
 post_wordcount:
   item_text: true
   wordcount: true
-#  min2read: true
+  min2read: true
   separated_meta: true
 
 # Wechat Subscriber
@@ -306,10 +306,8 @@ baidu_analytics: a53f74323c99608e344f6cc77c434d62
 # Disqus
 disqus:
   enable: true
-  shortname: myhongkongzhen
+  shortname: Z_Z.W
   count: true
-
-disqus_shortname: myhongkongzhen
 
 # Hypercomments
 #hypercomments_id:
@@ -420,11 +418,11 @@ busuanzi_count:
   enable: true
   # custom uv span for the whole site
   site_uv: true
-  site_uv_header: <i class="fa fa-user">訪問人數</i>
+  site_uv_header: <i class="fa fa-user">Visiter</i>
   site_uv_footer:
   # custom pv span for the whole site
   site_pv: true
-  site_pv_header: <i class="fa fa-eye">總訪問量</i>
+  site_pv_header: <i class="fa fa-eye">Total v</i>
   site_pv_footer: 次
   # custom pv span for one page only
   page_pv: false
@@ -440,7 +438,7 @@ busuanzi_count:
 
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO
-baidu_push: false
+baidu_push: true
 
 # Google Calendar
 # Share your recent schedule to others via calendar page
@@ -522,20 +520,20 @@ pace: false
 pace_theme: pace-theme-minimal
 
 # Canvas-nest
-canvas_nest: false
+canvas_nest: true
 
 # three_waves
 three_waves: false
 
 # canvas_lines
-canvas_lines: false
+canvas_lines: true
 
 # canvas_sphere
-canvas_sphere: false
+canvas_sphere: true
 
 # Only fit scheme Pisces
 # Canvas-ribbon
-canvas_ribbon: false
+canvas_ribbon: true
 
 # Script Vendors.
 # Set a CDN address for the vendor you want to customize.
